@@ -1,0 +1,82 @@
+<%- include('../template/header') -%>
+
+<div>
+    <h1 class="text-center" style='margin-top:3em'>Sample Information</h1>
+    <br>
+    <div class="container">
+        <table id="myTable" class="table table-striped table-bordered" >
+            <thead>
+                <tr>
+                    <th>Main Operator Name</th>
+                    <th>Sample Name</th>
+                    <th>Donor code</th>
+                    <th>Donor Age</th>
+                    <th>Donor Sex</th>
+                    <th>Donor Weight (Kg)</th>
+                    <th>Type of sample</th>
+                    <th>Sample Storage Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Zahid Hossain</td>
+                        <td>O(-)VE Blood</td>
+                        <td>12345</td>
+                        <td>30</td>
+                        <td>Male</td>
+                        <td>50</td>
+                        <td>Liquid</td>
+                        <td>Storage room KUL >>> Equipment</td>
+                    </tr>
+                    <tr>
+                        <td>Zahid Hossain</td>
+                        <td>O(-)VE Blood</td>
+                        <td>12345</td>
+                        <td>30</td>
+                        <td>Male</td>
+                        <td>50</td>
+                        <td>Liquid</td>
+                        <td>Storage room KUL >>> Equipment</td>
+                    </tr>
+                    <tr>
+                        <td>Zahid Hossain</td>
+                        <td>O(-)VE Blood</td>
+                        <td>12345</td>
+                        <td>30</td>
+                        <td>Male</td>
+                        <td>50</td>
+                        <td>Liquid</td>
+                        <td>Storage room KUL >>> Equipment</td>
+                    </tr>
+                    <tr>
+                        <td>Zahid Hossain</td>
+                        <td>O(-)VE Blood</td>
+                        <td>12345</td>
+                        <td>30</td>
+                        <td>Male</td>
+                        <td>50</td>
+                        <td>Liquid</td>
+                        <td>Storage room KUL >>> Equipment</td>
+                    </tr>
+                    <tr>
+                        <td>Zahid Hossain</td>
+                        <td>O(-)VE Blood</td>
+                        <td>12345</td>
+                        <td>30</td>
+                        <td>Male</td>
+                        <td>50</td>
+                        <td>Liquid</td>
+                        <td>Storage room KUL >>> Equipment</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<%- include('../template/footer') -%>
+
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+} );
+</script>

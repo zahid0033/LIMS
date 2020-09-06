@@ -58,6 +58,16 @@ router.get("/dashboard", (req, res) => {
     res.render("pages/dashboard");
 });
 
+//@route  - GET /samples
+//@desc   - a route to samples page
+//@access - private
+router.get("/samples", (req, res) => res.render("pages/samples"));
+
+//@route  - GET /samples
+//@desc   - a route to samples page
+//@access - private
+router.get("/samplesTable", (req, res) => res.render("pages/samplesTable"));
+
 //Auth Routes
 
 //@route  -  GET /signup

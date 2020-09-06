@@ -7,7 +7,7 @@ const {checkUser} = require("./middleware/authMiddleware");
 //Reference of express module
 const app = express();
 
-const url = "mongodb://localhost:27017/boilerplateDb"; 
+const url = "mongodb://localhost:27017/lims"; 
 // If we want to use mongo atlas
 //const dbURI = 'mongodb+srv://el06:test1234@cluster0.oho65.mongodb.net/node-auth';
 const port = process.env.PORT || 8000;
