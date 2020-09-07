@@ -1,0 +1,81 @@
+<%- include('../../../template/header') -%>
+
+<div style="margin: 1rem";>
+    <h1 class="text-center" style='margin-top:1em'>Add Reagent Details</h1>
+    <div class="container">
+        <div class="">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <div style="background: #e3e3e380;
+                padding: 50px;">
+                    <form method="post">
+
+                        <div class="form-group">
+                            <label for="validationDefault05">Name</label>
+                            <br>
+                            <select class="form-control"  name="name" required>
+                                <option value="" disable selected hidden>Choose a name</option>
+                                <option value="zahid">Zahid</option>
+                                <option value="masud">Masud</option>
+                                <option value="piash">Piash</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault02">Seller</label>
+                            <input type="text" class="form-control" id="validationDefault02" name="seller" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault03">Packaging Size</label>
+                            <input type="text" class="form-control" id="validationDefault03" name="package_size" required>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="validationDefault04">Production Company</label>
+                                    <input type="number" class="form-control" id="validationDefault04" name="age" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="validationDefault04">Item Code</label>
+                                    <input type="number" class="form-control" id="validationDefault04" name="age" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="validationDefault06">Storage Place</label>
+                                    <input type="number" class="form-control"  name="weight"  required>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Received Date</label>
+                            <input type="date" class="form-control" id="validationDefault07" name="type" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Expiration Date</label>
+                            <input type="date" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Volume</label>
+                            <input type="text" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+
+                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('../../../template/footer') -%>

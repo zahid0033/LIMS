@@ -1,0 +1,111 @@
+<%- include('../../../template/header') -%>
+
+<div style="margin: 1rem";>
+    <h1 class="text-center" style='margin-top:1em'>Add Equipment Details</h1>
+    <div class="container">
+        <div class="">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <div style="background: #e3e3e380;
+                padding: 50px;">
+                    <form method="post">
+
+                        <div class="form-group">
+                            <label for="validationDefault05">Equipments Name</label>
+                            <br>
+                            <select class="form-control"  name="name" required>
+                                <option value="" disable selected hidden>Choose a name</option>
+                                <option value="zahid">Leathe Machine</option>
+                                <option value="masud">Computer</option>
+                                <option value="piash">Laptop</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault02">Description</label>
+                            <textarea id="w3review" class="form-control" name="w3review" rows="4" cols="100"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault03">Category</label>
+                            <input type="text" class="form-control" id="validationDefault03" name="package_size" required>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="validationDefault04">Seller</label>
+                                    <input type="number" class="form-control" id="validationDefault04" name="age" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="validationDefault04">Brand</label>
+                                    <input type="number" class="form-control" id="validationDefault04" name="age" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="validationDefault06">Date of Purchase</label>
+                                    <input type="date" class="form-control"  name="weight"  required>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Warrenty</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    No
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Warrenty end Date</label>
+                            <input type="date" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Content Upload</label>
+                            <input type="file" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Storage Location</label>
+                            <input type="text" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="validationDefault07">Temparature</label>
+                            <input type="text" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault07">Manual</label>
+                            <input type="file" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="validationDefault07">Person in charge</label>
+                            <input type="text" class="form-control" id="validationDefault07" name="storage" required>
+                        </div>
+
+                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('../../../template/footer') -%>

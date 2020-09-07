@@ -41,64 +41,16 @@ const createToken = (id) => {
   });
 };
 
-
 //Route and Controller Actions
 
-//@route  -  GET /
-//@desc   -  a route to home page.
-//@access -  public
 router.get("/", (req, res) => {
     res.render("pages/index");
 });
 
-//@route  -  GET /
-//@desc   -  a route to dashboard page.
-//@access -  private
-router.get("/dashboard", (req, res) => {
-    res.render("pages/dashboard");
-});
-
-//@route  - GET /samples
-//@desc   - a route to samples page
-//@access - private
-router.get("/samples", (req, res) => res.render("pages/samples"));
-
-//@route  - GET /samples
-//@desc   - a route to samples page
-//@access - private
-router.get("/samplesTable", (req, res) => res.render("pages/samplesTable"));
-
-
-//@route  - GET /certification
-//@desc   - a route to certification page
-//@access - private
-router.get('/certification', (req, res) => res.render("pages/certification"));
-
-
-//@route  - GET /certificationTable
-//@desc   - a route to certification page
-//@access - private
-router.get('/certificationTable', (req, res) => res.render("pages/certificationTable"));
-
 //Auth Routes
-
-//@route  -  GET /signup
-//@desc   -  a route to the signup page.
-//@access -  public
 router.get("/signup", (req, res) => {
     res.render("pages/signup");
 });
-
-//@route  -  GET /login
-//@desc   -  a route to the login page.
-//@access -  public
-router.get("/login", (req, res) => {
-    res.render("pages/login");
-});
-
-//@route  -  POST /signup
-//@desc   -  getting value from signup page.
-//@access -  public
 router.post("/signup", async (req, res) => {
     const {email, password} = req.body;
     try {
@@ -111,10 +63,9 @@ router.post("/signup", async (req, res) => {
         res.status(400).json({ error });
     }
 });
-
-//@route  -  POST /login
-//@desc   -  getting value from login page.
-//@access -  public
+router.get("/login", (req, res) => {
+    res.render("pages/login");
+});
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
     try {
@@ -127,13 +78,39 @@ router.post('/login', async (req, res) => {
         res.status(400).json({error});
     }
 });
-
-//@route  -  GET /logout
-//@desc   -  logout from current user.
-//@access -  public
 router.get('/logout', async (req, res) => {
     res.cookie("jwt", "", { maxAge:1 });
     res.redirect("/");
 });
+//Auth Routes end
+
+router.get("/dashboard", (req, res) => {
+    res.render("pages/dashboard");
+});
+
+// samples
+router.get("/samples", (req, res) => res.render("pages/samples"));
+router.get("/samplesTable", (req, res) => res.render("pages/samplesTable"));
+// samples end
+
+// certification
+router.get('/certification', (req, res) => res.render("pages/certification"));
+router.get('/certificationTable', (req, res) => res.render("pages/certificationTable"));
+// certification end
+
+//inventory
+router.get('/reagent', (req,res) => res.render("pages/Inventory/Reagent/reagent") );
+router.get('/addReagent', (req,res) => res.render("pages/Inventory/Reagent/addReagent") );
+//inventory end
+
+//apparatus
+router.get('/apparatus', (req,res) => res.render("pages/Inventory/Apparatus/apparatus") );
+router.get('/addApparatus', (req,res) => res.render("pages/Inventory/Apparatus/addApparatus") );
+//inventory end
+
+//apparatus
+router.get('/equipments', (req,res) => res.render("pages/Inventory/Equipments/equipment") );
+router.get('/addEquipments', (req,res) => res.render("pages/Inventory/Equipments/addEquipments") );
+//inventory end
 
 module.exports = router;

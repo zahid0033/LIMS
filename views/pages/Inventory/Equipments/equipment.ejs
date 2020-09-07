@@ -1,0 +1,52 @@
+<%- include('../../../template/header') -%>
+
+<div>
+    <h1 class="text-center" style='margin-top:1em'>Equipments</h1>
+    <br>
+    <div class="container">
+        <a href="/addEquipments" class="btn btn-success mb-3">Add Equipments</a>
+        <table id="myTable" class="table table-striped table-bordered" >
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Seller</th>
+                <th>Store Location</th>
+                <th>Temperature</th>
+                <th>Person in Charge</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Leathe machine</td>
+                <td>Zahid</td>
+                <td>Left corner</td>
+                <td>80 degree</td>
+                <td>Masud</td>
+            </tr>
+            <tr>
+                <td>Leathe machine</td>
+                <td>Zahid</td>
+                <td>Left corner</td>
+                <td>80 degree</td>
+                <td>Masud</td>
+            </tr>
+            <tr>
+                <td>Leathe machine</td>
+                <td>Zahid</td>
+                <td>Left corner</td>
+                <td>80 degree</td>
+                <td>Masud</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<%- include('../../../template/footer') -%>
+
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
+</script>
