@@ -58,6 +58,28 @@ router.get("/dashboard", (req, res) => {
     res.render("pages/dashboard");
 });
 
+//@route  - GET /samples
+//@desc   - a route to samples page
+//@access - private
+router.get("/samples", (req, res) => res.render("pages/samples"));
+
+//@route  - GET /samples
+//@desc   - a route to samples page
+//@access - private
+router.get("/samplesTable", (req, res) => res.render("pages/samplesTable"));
+
+
+//@route  - GET /certification
+//@desc   - a route to certification page
+//@access - private
+router.get('/certification', (req, res) => res.render("pages/certification"));
+
+
+//@route  - GET /certificationTable
+//@desc   - a route to certification page
+//@access - private
+router.get('/certificationTable', (req, res) => res.render("pages/certificationTable"));
+
 //Auth Routes
 
 //@route  -  GET /signup

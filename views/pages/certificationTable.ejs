@@ -1,0 +1,58 @@
+<%- include('../template/header') -%>
+
+<div>
+    <h1 class="text-center" style='margin-top:3em'>Certificate Information</h1>
+    <br>
+    <div class="container">
+        <table id="myTable" class="table table-striped table-bordered" >
+            <thead>
+                <tr>
+                    <th>Certificate Name</th>
+                    <th>Issue Date</th>
+                    <th>Certificate Holder</th>
+                    <th>Uploaded Certificate</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Best Research Paper</td>
+                        <td>15-6-2020</td>
+                        <td>Mehedi Hasan</td>
+                        <td> <img src="http://onartsandcultures.com/wp-content/uploads/sites/26/2019/01/ARTS-sample-certificate-in-person-participant.jpg" width="100" height="50"alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Fuel Research Paper</td>
+                        <td>15-6-2020</td>
+                        <td>Zahid Hossain </td>
+                        <td> <img src="http://onartsandcultures.com/wp-content/uploads/sites/26/2019/01/ARTS-sample-certificate-in-person-participant.jpg" width="100" height="50"alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Oil Research Paper</td>
+                        <td>15-6-2020</td>
+                        <td>Hasib Khan</td>
+                        <td> <img src="http://onartsandcultures.com/wp-content/uploads/sites/26/2019/01/ARTS-sample-certificate-in-person-participant.jpg" width="100" height="50"alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Corona Research Paper</td>
+                        <td>15-6-2020</td>
+                        <td>Habib Khan</td>
+                        <td> <img src="http://onartsandcultures.com/wp-content/uploads/sites/26/2019/01/ARTS-sample-certificate-in-person-participant.jpg" width="100" height="50"alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Best Research Paper</td>
+                        <td>15-6-2020</td>
+                        <td>Mehedi Hasan</td>
+                        <td> <img src="http://onartsandcultures.com/wp-content/uploads/sites/26/2019/01/ARTS-sample-certificate-in-person-participant.jpg" width="100" height="50"alt=""></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<%- include('../template/footer') -%>
+
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+} );
+</script>
