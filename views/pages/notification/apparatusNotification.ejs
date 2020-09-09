@@ -1,15 +1,15 @@
-<%- include('../../../template/header') -%>
+<%- include('../../template/header') -%>
 
 <div>
-    <h1 class="text-center" style='margin-top:1em'>Reagents</h1>
+    <h1 class="text-center" style='margin-top:1em'>Apparatus Notification</h1>
     <br>
     <div class="container">
-        <a href="/addReagent" class="btn btn-success mb-3">Add Reagent</a>
+        
         <table id="myTable" class="table table-striped table-bordered" >
             <thead>
             <tr>
-                <th>Reagent</th>
-                <th>Stock (Volume)</th>
+                <th>Apparatus</th>
+                <th>Stock</th>
                 <th>Latest Update</th>
                 <th>Storage Place</th>
                 <th>Action</th>
@@ -17,9 +17,9 @@
             </thead>
             <tbody>
             <tr>
-                <td>H2SO4</td>
-                <td>20 units</td>
-                <td>20-05-2020</td>
+                <td>Microscope</td>
+                <td>3</td>
+                <td>20-05-2010</td>
                 <td>Upper Self</td>
                 <td>
                     <a href="#" title="See Details" ><i class="fa fa-arrow-right fa-lg" style="color:green; margin-right:10px" aria-hidden="true"></i></a>
@@ -28,8 +28,8 @@
                 </td>
             </tr>
             <tr>
-                <td>HCL</td>
-                <td>15 units</td>
+                <td>Test Tube</td>
+                <td>5</td>
                 <td>15-02-2019</td>
                 <td>Self 1</td>
                 <td>
@@ -39,8 +39,8 @@
                 </td>
             </tr>
             <tr>
-                <td>NaCl</td>
-                <td>5 units</td>
+                <td>Watch glass</td>
+                <td>4</td>
                 <td>15-02-2019</td>
                 <td>Self 3</td>
                 <td>
@@ -53,9 +53,11 @@
             </tbody>
         </table>
     </div>
+    <h4 class="text-center" style='margin-top:1em; color: red;'>These apparatus are going to be out of the stock soon ! </h1>
+
 </div>
 
-<%- include('../../../template/footer') -%>
+<%- include('../../template/footer') -%>
 
 <script>
     $(document).ready( function () {

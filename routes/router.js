@@ -98,19 +98,30 @@ router.get('/certification', (req, res) => res.render("pages/certification"));
 router.get('/certificationTable', (req, res) => res.render("pages/certificationTable"));
 // certification end
 
-//inventory
+//inventory (reagent)
 router.get('/reagent', (req,res) => res.render("pages/Inventory/Reagent/reagent") );
 router.get('/addReagent', (req,res) => res.render("pages/Inventory/Reagent/addReagent") );
 //inventory end
 
-//apparatus
+//inventory (apparatus)
 router.get('/apparatus', (req,res) => res.render("pages/Inventory/Apparatus/apparatus") );
 router.get('/addApparatus', (req,res) => res.render("pages/Inventory/Apparatus/addApparatus") );
 //inventory end
 
-//apparatus
+//inventory (equipments)
 router.get('/equipments', (req,res) => res.render("pages/Inventory/Equipments/equipment") );
 router.get('/addEquipments', (req,res) => res.render("pages/Inventory/Equipments/addEquipments") );
 //inventory end
+
+//inventory notifications (reagent)
+router.get('/reagentNotification', (req,res) => res.render("pages/notification/reagentNotification"));
+// reagent end
+
+//inventory notifications (apparatus)
+router.get('/apparatusNotification', (req,res) => res.render("pages/notification/apparatusNotification"));
+// apparatus end
+
+//inventory notifications (equipments)
+router.get('/equipmentNotification', (req,res) => res.render("pages/notification/equipmentNotification"));
 
 module.exports = router;

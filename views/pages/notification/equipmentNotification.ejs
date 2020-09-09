@@ -1,26 +1,28 @@
-<%- include('../../../template/header') -%>
+<%- include('../../template/header') -%>
 
 <div>
-    <h1 class="text-center" style='margin-top:1em'>Reagents</h1>
+    <h1 class="text-center" style='margin-top:1em'>Equipments Notification</h1>
     <br>
     <div class="container">
-        <a href="/addReagent" class="btn btn-success mb-3">Add Reagent</a>
+        
         <table id="myTable" class="table table-striped table-bordered" >
             <thead>
             <tr>
-                <th>Reagent</th>
-                <th>Stock (Volume)</th>
-                <th>Latest Update</th>
-                <th>Storage Place</th>
+                <th>Name</th>
+                <th>Seller</th>
+                <th>Store Location</th>
+                <th>Remaining days to repair</th>
+                <th>Person in Charge</th>
                 <th>Action</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>H2SO4</td>
-                <td>20 units</td>
-                <td>20-05-2020</td>
-                <td>Upper Self</td>
+                <td>Leathe machine</td>
+                <td>Labtex BD</td>
+                <td>Left corner</td>
+                <td>80</td>
+                <td>Masud</td>
                 <td>
                     <a href="#" title="See Details" ><i class="fa fa-arrow-right fa-lg" style="color:green; margin-right:10px" aria-hidden="true"></i></a>
                     <a href="#" title="See Details" ><i class="fa fa-pencil-square-o fa-lg" style="color:blue; margin-right:10px" aria-hidden="true"></i></i></a>
@@ -28,10 +30,11 @@
                 </td>
             </tr>
             <tr>
-                <td>HCL</td>
-                <td>15 units</td>
-                <td>15-02-2019</td>
-                <td>Self 1</td>
+                <td>Freezers</td>
+                <td>Labtex BD</td>
+                <td>Left corner</td>
+                <td>60</td>
+                <td>Zahid</td>
                 <td>
                     <a href="#" title="See Details" ><i class="fa fa-arrow-right fa-lg" style="color:green; margin-right:10px" aria-hidden="true"></i></a>
                     <a href="#" title="See Details" ><i class="fa fa-pencil-square-o fa-lg" style="color:blue; margin-right:10px" aria-hidden="true"></i></i></a>
@@ -39,10 +42,11 @@
                 </td>
             </tr>
             <tr>
-                <td>NaCl</td>
-                <td>5 units</td>
-                <td>15-02-2019</td>
-                <td>Self 3</td>
+                <td>Incubators</td>
+                <td>Labtex BD</td>
+                <td>Left corner</td>
+                <td>25</td>
+                <td>Toha</td>
                 <td>
                     <a href="#" title="See Details" ><i class="fa fa-arrow-right fa-lg" style="color:green; margin-right:10px" aria-hidden="true"></i></a>
                     <a href="#" title="See Details" ><i class="fa fa-pencil-square-o fa-lg" style="color:blue; margin-right:10px" aria-hidden="true"></i></i></a>
@@ -53,9 +57,11 @@
             </tbody>
         </table>
     </div>
+    <h4 class="text-center" style='margin-top:1em; color: red;'>These equipments are needed to be repair soon ! </h1>
+
 </div>
 
-<%- include('../../../template/footer') -%>
+<%- include('../../template/footer') -%>
 
 <script>
     $(document).ready( function () {
