@@ -93,6 +93,10 @@ router.get("/samples", (req, res) => res.render("pages/samples"));
 router.get("/samplesTable", (req, res) => res.render("pages/samplesTable"));
 // samples end
 
+// record 
+router.get("/record", (req, res) => res.render("pages/record/record"));
+router.get("/recordTable", (req, res) => res.render("pages/record/recordTable"));
+
 // certification
 router.get('/certification', (req, res) => res.render("pages/certification"));
 router.get('/certificationTable', (req, res) => res.render("pages/certificationTable"));
@@ -113,6 +117,11 @@ router.get('/equipments', (req,res) => res.render("pages/Inventory/Equipments/eq
 router.get('/addEquipments', (req,res) => res.render("pages/Inventory/Equipments/addEquipments") );
 //inventory end
 
+// project tracking
+router.get('/runningProject', (req,res) => res.render("pages/project/runningProjects"));
+router.get('/projectUpdats', (req,res) => res.render("pages/project/projectUpdates"));
+// project tracking end
+
 //inventory notifications (reagent)
 router.get('/reagentNotification', (req,res) => res.render("pages/notification/reagentNotification"));
 // reagent end
@@ -123,5 +132,7 @@ router.get('/apparatusNotification', (req,res) => res.render("pages/notification
 
 //inventory notifications (equipments)
 router.get('/equipmentNotification', (req,res) => res.render("pages/notification/equipmentNotification"));
+//equipments end
+
 
 module.exports = router;

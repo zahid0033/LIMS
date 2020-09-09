@@ -1,0 +1,50 @@
+<%- include('../../template/header') -%>
+
+<div style="margin: 3rem";>
+    <h1 class="text-center" style='margin-top:3em'>Add Records</h1>
+    <div class="container">
+        <div class="">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <div style="background: #e3e3e380;
+                padding: 50px;">
+                    <form method="post" action="/record">
+
+                        <div class="form-group">
+                            <label for="validationDefault01">Publisher Name</label>
+                            <input type="text" class="form-control" id="validationDefault01" name="headline"  required>                        
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault04">Publication Title</label>
+                            <input type="text" class="form-control" id="validationDefault04" name="headline"  required>                        
+                        </div>
+
+                        <div class="form-group">
+                            <label>Publication Details</label>
+                            <textarea id="w3review" class="form-control" name="w3review" rows="4" cols="100"></textarea>                        
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault02">Publication Date</label>
+                            <input type="date" class="form-control" id="validationDefault02" name="date" required>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="validationDefault03">Upload Documents</label>
+                            <input type="file" class="form-control" id="validationDefault03" name="up"  required>                        
+                        </div>
+                        
+                        
+                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                    </form>   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('../../template/footer') -%>

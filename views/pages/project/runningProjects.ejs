@@ -1,0 +1,53 @@
+<%- include('../../template/header') -%>
+
+<div style="margin: 3rem";>
+    <h1 class="text-center" style='margin-top:3em'>Projects</h1>
+    <div class="container">
+        <div class="">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <div style="background: #e3e3e380;
+                padding: 50px;">
+                    <form method="post" action="/certification">
+
+                        <div class="form-group">
+                            <label for="validationDefault01">Project Name</label>
+                            <input type="text" class="form-control" id="validationDefault01" name="headline"  required>                        
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault01">Project Leader</label>
+                            <input type="text" class="form-control" id="validationDefault01" name="headline"  required>                        
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault02">Project Starting Date</label>
+                            <input type="date" class="form-control" id="validationDefault04" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault02">Estimated Finishing Date</label>
+                            <input type="date" class="form-control" id="validationDefault04" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault01">Additional Group Member Name</label>
+                            <input type="text" class="form-control" id="validationDefault01" name="holder"  required>                        
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validationDefault01">Necessary Documents</label>
+                            <input type="file" class="form-control" id="validationDefault01" name="up"  required>                        
+                        </div>
+                        
+                        
+                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                    </form>   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('../../template/footer') -%>
