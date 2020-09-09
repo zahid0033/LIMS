@@ -1,0 +1,64 @@
+<%- include('../../template/header') -%>
+
+<div>
+    <h1 class="text-center" style='margin-top:1em'>Employees</h1>
+    <br>
+    <div class="container">
+        <a href="/addApparatus" class="btn btn-success mb-3">Add Employee</a>
+        <table id="myTable" class="table table-striped table-bordered" >
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Duty Time</th>
+                <th>Mobile number</th>
+                <th>Associated Lab</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Abir</td>
+                <td>9:00-12:00</td>
+                <td>017478952</td>
+                <td>Machine Lab</td>
+                <td>
+                    <a href="#" title="See Details" ><i class="fa fa-arrow-right fa-lg" style="color:green; margin-right:10px" aria-hidden="true"></i></a>
+                    <a href="#" title="See Details" ><i class="fa fa-pencil-square-o fa-lg" style="color:blue; margin-right:10px" aria-hidden="true"></i></i></a>
+                    <a href="#" title="See Details" ><i class="fa fa-trash-o fa-lg" style="color:red" aria-hidden="true"></i></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Mehdi</td>
+                <td>12:000-3:00</td>
+                <td>01678954</td>
+                <td>Agri Lab</td>
+                <td>
+                    <a href="#" title="See Details" ><i class="fa fa-arrow-right fa-lg" style="color:green; margin-right:10px" aria-hidden="true"></i></a>
+                    <a href="#" title="See Details" ><i class="fa fa-pencil-square-o fa-lg" style="color:blue; margin-right:10px" aria-hidden="true"></i></i></a>
+                    <a href="#" title="See Details" ><i class="fa fa-trash-o fa-lg" style="color:red" aria-hidden="true"></i></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Rajib</td>
+                <td>9:00 - 12:00</td>
+                <td>015478965</td>
+                <td>Machine Lab</td>
+                <td>
+                    <a href="#" title="See Details" ><i class="fa fa-arrow-right fa-lg" style="color:green; margin-right:10px" aria-hidden="true"></i></a>
+                    <a href="#" title="See Details" ><i class="fa fa-pencil-square-o fa-lg" style="color:blue; margin-right:10px" aria-hidden="true"></i></i></a>
+                    <a href="#" title="See Details" ><i class="fa fa-trash-o fa-lg" style="color:red" aria-hidden="true"></i></i></a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<%- include('../../template/footer') -%>
+
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
+</script>
