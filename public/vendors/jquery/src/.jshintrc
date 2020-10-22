@@ -20,7 +20,7 @@
 	"globals": {
 		"window": true,
 		"JSON": false,
-
+		"esversion": 6,
 		"jQuery": true,
 		"define": true,
 		"module": true,
